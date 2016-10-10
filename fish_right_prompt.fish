@@ -7,7 +7,7 @@ function fish_right_prompt
   set -l red (set_color -o red)
   set -l normal (set_color normal)
 
-  echo -n -s $cyan (prompt_pwd)
+  echo -n -s $cyan (pwd)
 
   if test $last_status -ne 0
     set_color red
